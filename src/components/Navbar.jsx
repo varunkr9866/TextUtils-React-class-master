@@ -7,28 +7,21 @@ export default class Navbar extends Component {
     constructor(props) {
         super(props);
 
-        // No useState in original component, but constructor is required
         this.state = {};
-
-        // Binding methods (if any event handlers were needed)
         this.handleToggleMode = this.handleToggleMode.bind(this);
     }
 
-    // Event listener method for toggle
     handleToggleMode() {
         this.props.toggleMode();
     }
 
-    // useEffect equivalent if needed
     componentDidMount() {
-        // Example:
-        // console.log("Navbar mounted");
+        console.log("Navbar mounted");
     }
 
     componentDidUpdate(prevProps) {
-        // Example: react to mode change
         if (prevProps.mode !== this.props.mode) {
-            // console.log("Navbar mode updated");
+            console.log("Navbar mode updated");
         }
     }
 
