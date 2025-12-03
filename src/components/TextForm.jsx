@@ -6,12 +6,10 @@ export default class TextForm extends Component {
     constructor(props) {
         super(props);
 
-        // (4) Replacing useState with a single state object
         this.state = {
             text: ''
         };
 
-        // (5) Binding all event methods
         this.handleUpClick = this.handleUpClick.bind(this);
         this.handleLoClick = this.handleLoClick.bind(this);
         this.handleClearClick = this.handleClearClick.bind(this);
@@ -30,9 +28,6 @@ export default class TextForm extends Component {
         // if (prevProps.mode !== this.props.mode) console.log("Mode changed");
     }
 
-    // -------------------------
-    // EVENT HANDLER METHODS
-    // -------------------------
 
     handleUpClick() {
         const newText = this.state.text.toUpperCase();
@@ -66,9 +61,6 @@ export default class TextForm extends Component {
         this.props.showAlert("Extra spaces removed!", "success");
     }
 
-    // -------------------------
-    // RENDER METHOD (JSX)
-    // -------------------------
     render() {
         return (
             <>
