@@ -18,14 +18,12 @@ export default class TextForm extends Component {
     this.handleExtraSpaces = this.handleExtraSpaces.bind(this);
   }
 
-  // (7) Lifecycle equivalents (optional)
   componentDidMount() {
-    // console.log("TextForm mounted");
+    console.log("TextForm mounted");
   }
 
   componentDidUpdate(prevProps) {
-    // If mode changes, you could react here
-    // if (prevProps.mode !== this.props.mode) console.log("Mode changed");
+    if (prevProps.mode !== this.props.mode) console.log("Mode changed");
   }
 
   handleUpClick() {
