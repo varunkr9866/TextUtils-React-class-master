@@ -1,12 +1,13 @@
 
 import React, { Component } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default class Alert extends Component {
 
     constructor(props) {
         super(props);
 
-        // No state needed, but constructor required by rules
         this.state = {};
 
         // Method binding
